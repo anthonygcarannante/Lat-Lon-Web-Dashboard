@@ -1,0 +1,64 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+    .nav { 
+        text-align: center; 
+    }
+    .nav li {
+        list-style: none; 
+        display: inline-block;
+    }
+    .nav a {
+        color: #3297FD; 
+        display: block; 
+        font-family:arial; 
+        text-transform: uppercase; 
+        font-weight: bold; 
+        margin: 0; 
+        padding: 9px 18px 9px; 
+        text-decoration: none; 
+    }
+    .nav a:hover {
+        background-color: #2D89E5; 
+        color: #fff; 
+    }
+
+  /* Giving our navbar some padding and a background color */
+  /* .navbar {
+    padding: 10px;
+    background: #2207bd;
+  } */
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  /* .navbar li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+  } */
+  
+  /* Getting rid of the default link styles here */
+  /* .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+   */
