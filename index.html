@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vacation Destination Analysis</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>CSS Review</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-
-</body>
-
-
+  <body>
+    <div class="container-fluid">
+      <!--Normally these medium columns go full wide on small screen sizes-->
+      <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar">
+                <h1>WeatherPy</h1>
+                <ul>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Plots</a>
+                    </li>
+                    <li>
+                        <a href="SubWebpages/comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="#">Data</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </nav>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Summary: Latitude vs. X</h1>
+            </div>
+            <div class="col-md-4">
+                <h1>Visualizations</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <figure class="figure">
+                    <img src="Resources/assets/Figure_Temperature (F).png" />
+                <p>
+                    The purpose of this project was th analyze how weather changes as you get close to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    <br><br>
+                    After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                </p>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <a href="SubWebpages/temperature.html">
+                    <img src="Resources/assets/Figure_Temperature (F).png" />
+                </a>
+                <a href="SubWebpages/cloudiness.html">
+                    <img src="Resources/assets/Figure_Cloudiness (%).png" />
+                </a>
+                <a href="SubWebpages/humidity.html">
+                    <img src="Resources/assets/Figure_Humidity (%).png" />
+                </a>
+                <a href="SubWebpages/wind.html">
+                    <img src="Resources/assets/Figure_Wind Speed (mph).png" />
+                </a>
+            </div>
+        </div>
+    </div>
+  </body>
 </html>
