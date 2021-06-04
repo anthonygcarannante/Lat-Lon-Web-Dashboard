@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Vacation Destination Analysis</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-      <p>Cloudiness Webpage Test</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Vacation Destination Analysis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="temperature.html">Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+          </div>
+          </li>
+          </ul>
+      </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p><br><br></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Summary: Latitude vs. Cloudiness</h1>
+      </div>
+      <div class="col-md-4">
+        <h1>Visualizations</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <figure class="figure">
+          <img src="Resources/assets/images/Fig3.png" width=75% />
+          <figcaption>
+            Cloudiness Analysis<br><br>
+            Cloudiness Analysis 2
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <a href="temperature.html">
+          <img class="img-fluid" src="Resources/assets/images/Fig1.png" width=75% />
+        </a>
+        <a href="humidity.html">
+          <img class="img-fluid" src="Resources/assets/images/Fig2.png" width=75% />
+        </a>
+        <a href="cloudiness.html">
+          <img class="img-fluid" src="Resources/assets/images/Fig3.png" width=75% />
+        </a>
+        <a href="wind.html">
+          <img class="img-fluid" src="Resources/assets/images/Fig4.png" width=75% />
+        </a>
+      </div>
+    </div>
+</body>
