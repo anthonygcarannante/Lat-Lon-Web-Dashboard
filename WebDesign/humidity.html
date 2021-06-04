@@ -19,29 +19,14 @@
         <div class="col-md-12">
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Latitude</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown active">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >Plots
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="temperature.html">Temperature</a>
@@ -68,41 +53,49 @@
       </div>
     </div>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Summary: Latitude vs. Humidity</h1>
-            </div>
-            <div class="col-md-4">
-                <h1>Visualizations</h1>
-            </div>
+   <!-- Headers -->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="col-md-12">
+          <h1>Summary: Latitude vs. Humidity</h1>
+          <hr>
+          <img src="Resources/assets/images/Fig2.png" width="100%"/>
+          <p>Humidity 1<br>Humidity 2
+          </p>
         </div>
-        <div class="row">
-            <div class="col-md-8">
-                <figure class="figure">
-                  <img src="Resources/assets/images/Fig2.png" width=75%/>
-                  <figcaption>
-                      Humidity Analysis<br><br>
-                      Humidity Analysis 2
-                    </figcaption>
-                  </figure>
-                
+      </div>
+
+        <!-- Visualizations Grid -->
+        <div class="col-md-4">
+          <h1>Visualizations</h1>
+          <hr>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-3 col-md-6">
+                <a href="temperature.html">
+                  <img class="img-fluid" src="Resources/assets/images/Fig1.png" width="100%"/>
+                </a>
+              </div>
+              <div class="col-3 col-md-6">
+                <a href="cloudiness.html">
+                  <img class="img-fluid" src="Resources/assets/images/Fig3.png" width="100%"/>
+                </a>
+              </div>
+              <div class="col-3 col-md-6">
+                <a href="humidity.html">
+                  <img class="img-fluid" src="Resources/assets/images/Fig2.png" width="100%"/>
+                </a> 
+              </div>
+              <div class="col-3 col-md-6">
+                <a href="wind.html">
+                  <img class="img-fluid" src="Resources/assets/images/Fig4.png" width="100%"/>
+                </a>
+              </div>
             </div>
-            <div class="col-md-4">
-              <a href="temperature.html">
-                <img class="img-fluid" src="Resources/assets/images/Fig1.png" />
-              </a>
-              <a href="humidity.html">
-                <img class="img-fluid" src="Resources/assets/images/Fig2.png" />
-              </a>
-              <a href="cloudiness.html">
-                <img class="img-fluid" src="Resources/assets/images/Fig3.png" />
-              </a>
-              <a href="wind.html">
-                <img class="img-fluid" src="Resources/assets/images/Fig4.png" />
-              </a>
-            </div>>
+          </div>
         </div>
+      </div>
     </div>
   </body>
 </html>
